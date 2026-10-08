@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar Dini Hubungan Industrial</title>
+<meta name="description" content="Alat bantu triase awal untuk mediator hubungan industrial: kenali jenis masalah, urgensi, dan langkah rujukan sebelum perselisihan membesar.">
+<meta property="og:title" content="Radar Dini Hubungan Industrial">
+<meta property="og:description" content="Hadir sebelum viral. Triase awal keluhan hubungan kerja, diproses di perangkat Anda.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230b1f33'/%3E%3Ccircle cx='50' cy='50' r='28' fill='none' stroke='%232dd4bf' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23fbbf24'/%3E%3C/svg%3E">
+<style>
+:root{--pg:#f3f6f9;--card:#fff;--tx:#14202e;--mu:#566577;--bd:#dbe3ea;--ac:#0f766e;--ac2:#e3f4f1;--nv:#0b1f33;--hi:#b42318;--md:#a15c00;--lo:#0f766e;--sh:0 6px 24px rgba(11,31,51,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pg:#0d141b;--card:#16212c;--tx:#e8eef4;--mu:#9bacbc;--bd:#263544;--ac:#2dd4bf;--ac2:#12332f;--hi:#ff8b80;--md:#ffc766;--lo:#2dd4bf;--sh:none}}
+:root[data-theme="dark"]{--pg:#0d141b;--card:#16212c;--tx:#e8eef4;--mu:#9bacbc;--bd:#263544;--ac:#2dd4bf;--ac2:#12332f;--hi:#ff8b80;--md:#ffc766;--lo:#2dd4bf;--sh:none}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+:focus-visible{outline:3px solid #fbbf24;outline-offset:2px}
+.hero{background:radial-gradient(1200px 400px at 85% -10%,#134e4a 0,transparent 60%),var(--nv);color:#fff;padding:36px 16px 56px}
+.in{max-width:880px;margin:0 auto}
+.hero .in{display:grid;grid-template-columns:1fr 160px;gap:20px;align-items:center}
+.kick{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:#5eead4;font-weight:700}
+h1{font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.15;margin:6px 0 10px}
+.hero p{margin:0 0 16px;color:#c9d6e2;max-width:48ch}
+.cta{display:inline-block;background:#fbbf24;color:#1b1400;font-weight:700;padding:11px 20px;border-radius:12px;text-decoration:none}
+.radar{width:160px;height:160px;border-radius:50%;position:relative;background:repeating-radial-gradient(circle,transparent 0 24px,rgba(94,234,212,.35) 25px 26px);border:1px solid rgba(94,234,212,.5)}
+.radar:before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(45,212,191,.55),transparent 28%);animation:sw 4s linear infinite}
+.radar i{position:absolute;width:9px;height:9px;border-radius:50%;background:#fbbf24;box-shadow:0 0 10px #fbbf24;animation:bl 2.4s ease-in-out infinite}
+.radar i:nth-child(1){top:32px;left:98px}.radar i:nth-child(2){top:96px;left:44px;animation-delay:.8s}.radar i:nth-child(3){top:112px;left:110px;animation-delay:1.6s}
+@keyframes sw{to{transform:rotate(360deg)}}@keyframes bl{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.radar:before,.radar i{animation:none}html{scroll-behavior:auto}}
+@media (max-width:600px){.hero .in{grid-template-columns:1fr}.radar{display:none}}
+main{max-width:880px;margin:-32px auto 0;padding:0 16px 40px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:var(--sh)}
+h2{font-size:1.1rem;margin:0 0 4px}
+.mu{color:var(--mu);font-size:.9rem}
+label{font-weight:700}
+textarea{width:100%;min-height:140px;margin-top:8px;padding:12px;border:1.5px solid var(--bd);border-radius:12px;background:var(--pg);color:var(--tx);font:inherit;resize:vertical}
+textarea:focus{border-color:var(--ac)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0}
+.chip{border:1px solid var(--bd);background:var(--pg);color:var(--tx);border-radius:99px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.chip:hover{border-color:var(--ac)}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{padding:12px 20px;border:0;border-radius:12px;background:var(--ac);color:#fff;font:inherit;font-weight:700;cursor:pointer}
+:root[data-theme="dark"] .btn,:root:not([data-theme="light"]) .btn{color:#06201c}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .btn{color:#fff}}
+.btn.g{background:var(--ac2);color:var(--ac)}
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0 6px}
+.meter span{height:10px;border-radius:6px;background:var(--bd)}
+.meter.Rendah span:nth-child(1){background:var(--lo)}
+.meter.Sedang span:nth-child(-n+2){background:var(--md)}
+.meter.Tinggi span{background:var(--hi)}
+.lvl{font-weight:800;font-size:1.25rem}.Tinggi .lvl,.lvl.Tinggi{color:var(--hi)}.lvl.Sedang{color:var(--md)}.lvl.Rendah{color:var(--lo)}
+.tag{display:inline-block;background:var(--ac2);color:var(--ac);padding:3px 11px;border-radius:99px;font-size:.85rem;font-weight:600;margin:3px 5px 3px 0}
+.warn{border:2px solid var(--hi);border-radius:12px;padding:12px 14px;color:var(--hi);font-weight:700;margin:12px 0}
+ol.st{list-style:none;padding:0;margin:8px 0;counter-reset:s}
+ol.st li{counter-increment:s;position:relative;padding:0 0 12px 38px}
+ol.st li:before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-size:.8rem;font-weight:700;display:grid;place-items:center}
+.box{background:var(--pg);border:1px dashed var(--bd);border-radius:12px;padding:12px;font-size:.93rem}
+.br{display:grid;grid-template-columns:minmax(120px,190px) 1fr 30px;gap:10px;align-items:center;margin:8px 0;font-size:.88rem}
+.bar{height:12px;background:linear-gradient(90deg,var(--ac),#2dd4bf);border-radius:8px;transition:width .5s}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:12px}
+.how div{background:var(--pg);border-radius:14px;padding:14px}
+.how b{display:block;margin-bottom:2px}
+footer{max-width:880px;margin:0 auto;padding:0 16px 40px;color:var(--mu);font-size:.85rem}
+[hidden]{display:none}
+.sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+<div>
+<div class="kick" id="inst">Nama Instansi Anda</div>
+<h1>Radar Dini Hubungan Industrial</h1>
+<p>Hadir sebelum viral. Baca keluhan, kenali jenis masalah dan urgensinya, lalu arahkan ke jalur yang tepat.</p>
+<a class="cta" href="#scan">Mulai pindai</a>
+</div>
+<div class="radar" aria-hidden="true"><i></i><i></i><i></i></div>
+</div></header>
+
+<main>
+<section class="card" id="scan" aria-labelledby="t1">
+<h2 id="t1">Pindai keluhan</h2>
+<p class="mu">Teks diproses di perangkat Anda dan tidak dikirim ke mana pun. Hapus nama orang dan perusahaan sebelum menempel.</p>
+<label for="inp">Keluhan atau unggahan</label>
+<textarea id="inp" placeholder="Tempel teks di sini..."></textarea>
+<div class="chips" role="group" aria-label="Contoh kasus fiktif"><span class="mu">Coba contoh fiktif:</span>
+<button class="chip" data-e="Karyawan di-PHK sepihak minggu lalu tanpa pesangon. Kalau tidak ada kabar besok akan kami viralkan dan demo.">PHK + viral</button>
+<button class="chip" data-e="Gaji tiga bulan belum dibayar dan BPJS tidak didaftarkan oleh perusahaan.">Upah + BPJS</button>
+<button class="chip" data-e="Kontrak saya diperpanjang berkali-kali dan saya dipindah ke bagian lain tanpa surat.">Kontrak + mutasi</button>
+</div>
+<div class="row"><button class="btn" id="go">Analisis</button><button class="btn g" id="clr">Bersihkan</button></div>
+<p class="mu" id="msg" role="status" style="margin:10px 0 0"></p>
+</section>
+
+<section class="card" id="out" aria-live="polite" tabindex="-1" hidden></section>
+
+<section class="card" aria-labelledby="t2">
+<h2 id="t2">Ringkasan jenis masalah</h2>
+<p class="mu">Jumlah dari analisis di peramban ini. Isi teks tidak disimpan.</p>
+<div id="chart"><p class="mu">Belum ada analisis.</p></div>
+<div class="row"><button class="btn g" id="rst">Kosongkan ringkasan</button></div>
+</section>
+
+<section class="card" aria-labelledby="t3">
+<h2 id="t3">Cara kerja</h2>
+<div class="how">
+<div><b>1. Baca</b><span class="mu">Mencari kata kunci jenis masalah dan sinyal eskalasi.</span></div>
+<div><b>2. Nilai</b><span class="mu">Menghitung skor urgensi dari sinyal viral, aksi, dan keselamatan.</span></div>
+<div><b>3. Rujuk</b><span class="mu">Menyarankan bipartit, mediasi, atau pengawas.</span></div>
+<div><b>4. Balas</b><span class="mu">Menyusun draf balasan netral yang tidak menilai kasus.</span></div>
+</div>
+<p class="mu" style="margin-top:12px">Pembacaan memakai kata kunci, bukan kecerdasan buatan. Sindiran, singkatan, dan bahasa daerah bisa terlewat.</p>
+</section>
+</main>
+
+<footer>
+<p><b>Saran awal, bukan penilaian hukum.</b> Keputusan tetap pada mediator. Alat ini belum divalidasi akurasinya; periksa hasilnya sebelum dipakai.</p>
+<p id="ft"></p>
+</footer>
+
+<script>
+var CONFIG={instansi:"Nama Instansi Anda",kanal:"",versi:"v0.1 (uji coba)"};
+var CAT={"PHK":["phk","dipecat","pecat","diberhentikan","dirumahkan","pemutusan","di-phk"],
+"Upah & Pesangon":["gaji","upah","pesangon","thr","lembur","tunggakan","belum dibayar","tidak dibayar","potong gaji","umk","umr"],
+"Kontrak (PKWT/Outsourcing)":["kontrak","pkwt","outsourcing","alih daya","magang","tidak diangkat"],
+"BPJS & Jaminan":["bpjs","jamsostek","jaminan pensiun","jht","tidak didaftarkan","iuran"],
+"K3 & Perlakuan":["kecelakaan","k3","intimidasi","dibentak","pelecehan","diskriminasi","kekerasan","bullying"],
+"Sanksi & Mutasi":["mutasi","skorsing","surat peringatan","sp1","sp2","sp3","demosi","dipindah"],
+"Serikat & Aksi":["serikat","spsi","demo","mogok","unjuk rasa","pkb","berunding"]};
+var VIRAL=["viral","viralkan","trending","fyp","rame","ramai","sebarkan","bongkar","boikot","open mic"];
+var ESC=["demo","mogok","ancam","lapor polisi","somasi","pengacara","sidang","sebarkan","bongkar","boikot","besok","hari ini","sekarang","mendesak"];
+var SAFE=["bunuh diri","mengakhiri hidup","ingin mati","bacok","kekerasan fisik","dipukul","ancam bunuh"];
+var NORMA=["gaji","upah","pesangon","thr","bpjs","jamsostek","phk sepihak","tanpa pesangon","tidak didaftarkan","lembur"];
+var $=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function has(t,a){return a.filter(function(w){return t.indexOf(w)>-1})}
+function analyze(raw){
+ var t=" "+raw.toLowerCase()+" ",cats=Object.keys(CAT).filter(function(k){return has(t,CAT[k]).length});
+ var v=has(t,VIRAL),e=has(t,ESC),s=has(t,SAFE),n=has(t,NORMA);
+ var sc=v.length*2+e.length+(cats.length>2?1:0)+(s.length?4:0);
+ return{cats:cats,v:v.length>0,s:s.length>0,n:n.length>0,sc:sc,lvl:sc>=4?"Tinggi":sc>=2?"Sedang":"Rendah"};
+}
+function steps(r){
+ var o=[];
+ if(r.s)o.push("<b>Prioritaskan keselamatan.</b> Hubungi pelapor secara langsung dan libatkan layanan darurat atau pendamping setempat sebelum urusan hubungan kerja.");
+ if(r.n)o.push("Ada dugaan pelanggaran norma (upah, BPJS, PHK). Teruskan ke <b>pengawas ketenagakerjaan</b>, jangan hanya edukasi.");
+ o.push("Pastikan <b>perundingan bipartit</b> sudah ditempuh. Bila gagal, arahkan ke pencatatan dan mediasi.");
+ if(r.v)o.push("Ada sinyal rencana viral. Kirim pesan netral dalam 24 jam dan tawarkan kanal resmi.");
+ if(r.cats.indexOf("Serikat & Aksi")>-1)o.push("Libatkan perwakilan serikat pekerja dan pengusaha agar tidak dinilai sepihak.");
+ if(!r.cats.length)o.push("Jenis masalah belum terbaca. Minta keterangan tambahan dari pelapor.");
+ return o;
+}
+function reply(){return "Terima kasih sudah menyampaikan. Kami tidak menilai kasus ini di kolom komentar, namun siap memfasilitasi penyelesaiannya secara netral bagi kedua belah pihak. "+(CONFIG.kanal?"Silakan hubungi "+CONFIG.kanal+".":"Silakan hubungi kanal resmi kami agar segera dibantu.")}
+var COUNT={};
+try{COUNT=JSON.parse(localStorage.getItem("radarCount")||"{}")}catch(x){COUNT={}}
+function saveC(){try{localStorage.setItem("radarCount",JSON.stringify(COUNT))}catch(x){}}
+function chart(){
+ var ks=Object.keys(COUNT).sort(function(a,b){return COUNT[b]-COUNT[a]});
+ if(!ks.length){$("chart").innerHTML='<p class="mu">Belum ada analisis.</p>';return}
+ var mx=COUNT[ks[0]];
+ $("chart").innerHTML=ks.map(function(k){return'<div class="br"><span>'+esc(k)+'</span><div><div class="bar" style="width:'+(COUNT[k]/mx*100)+'%"></div></div><b>'+COUNT[k]+'</b></div>'}).join("");
+}
+function copy(t,b){var d=function(){var o=b.textContent;b.textContent="Tersalin";setTimeout(function(){b.textContent=o},1600)};
+ function fb(){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");d()}catch(x){}document.body.removeChild(a)}
+ try{navigator.clipboard.writeText(t).then(d,fb)}catch(x){fb()}}
+$("go").onclick=function(){
+ var v=$("inp").value.trim();
+ if(!v){$("msg").textContent="Tempel teks keluhan terlebih dulu.";$("inp").focus();return}
+ $("msg").textContent="";
+ var r=analyze(v),o=$("out");
+ var h='<h2>Hasil pemindaian</h2><div class="lvl '+r.lvl+'">Urgensi: '+r.lvl+'</div><div class="meter '+r.lvl+'" aria-hidden="true"><span></span><span></span><span></span></div>';
+ if(r.s)h+='<div class="warn" role="alert">Sinyal keselamatan terdeteksi. Utamakan kontak langsung dengan pelapor.</div>';
+ h+='<p style="margin:14px 0 4px"><b>Jenis masalah terbaca</b></p>'+(r.cats.length?r.cats.map(function(c){return'<span class="tag">'+esc(c)+'</span>'}).join(""):'<span class="mu">Belum terbaca</span>');
+ h+='<p style="margin:14px 0 4px"><b>Langkah yang disarankan</b></p><ol class="st">'+steps(r).map(function(x){return'<li>'+x+'</li>'}).join("")+'</ol>';
+ h+='<p style="margin:6px 0 4px"><b>Draf balasan netral</b></p><div class="box" id="dr">'+esc(reply())+'</div><div class="row"><button class="btn g" id="cd">Salin balasan</button></div>';
+ h+='<p class="mu" style="margin-top:12px">Saran awal, bukan penilaian hukum. Skor '+r.sc+'.</p>';
+ o.innerHTML=h;o.hidden=false;o.focus({preventScroll:true});o.scrollIntoView({behavior:"smooth",block:"start"});
+ $("cd").onclick=function(){copy($("dr").textContent,this)};
+ (r.cats.length?r.cats:["Belum terbaca"]).forEach(function(c){COUNT[c]=(COUNT[c]||0)+1});saveC();chart();
+};
+$("clr").onclick=function(){$("inp").value="";$("out").hidden=true;$("msg").textContent="";$("inp").focus()};
+$("rst").onclick=function(){COUNT={};saveC();chart()};
+[].forEach.call(document.querySelectorAll(".chip"),function(b){b.onclick=function(){$("inp").value=b.getAttribute("data-e");$("inp").focus()}});
+$("inst").textContent=CONFIG.instansi;
+$("ft").textContent=CONFIG.instansi+" · "+CONFIG.versi;
+chart();
+</script>
+</body>
+</html>
