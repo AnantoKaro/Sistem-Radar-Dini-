@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar Dini Hubungan Industrial</title>
+<meta name="description" content="Alat bantu triase awal untuk mediator hubungan industrial: kenali jenis masalah, urgensi, dan langkah rujukan sebelum perselisihan membesar.">
+<meta property="og:title" content="Radar Dini Hubungan Industrial">
+<meta property="og:description" content="Hadir sebelum viral. Triase awal keluhan hubungan kerja, diproses di perangkat Anda.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230b1f33'/%3E%3Ccircle cx='50' cy='50' r='28' fill='none' stroke='%232dd4bf' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23fbbf24'/%3E%3C/svg%3E">
+<style>
+:root{--pg:#f3f6f9;--card:#fff;--tx:#14202e;--mu:#566577;--bd:#dbe3ea;--ac:#0f766e;--ac2:#e3f4f1;--nv:#0b1f33;--hi:#b42318;--md:#a15c00;--lo:#0f766e;--sh:0 6px 24px rgba(11,31,51,.08);--bt:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pg:#0d141b;--card:#16212c;--tx:#e8eef4;--mu:#9bacbc;--bd:#263544;--ac:#2dd4bf;--ac2:#12332f;--hi:#ff8b80;--md:#ffc766;--lo:#2dd4bf;--sh:none;--bt:#06201c}}
+:root[data-theme="dark"]{--pg:#0d141b;--card:#16212c;--tx:#e8eef4;--mu:#9bacbc;--bd:#263544;--ac:#2dd4bf;--ac2:#12332f;--hi:#ff8b80;--md:#ffc766;--lo:#2dd4bf;--sh:none;--bt:#06201c}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+:focus-visible{outline:3px solid #fbbf24;outline-offset:2px}
+.hero{background:radial-gradient(1200px 400px at 85% -10%,#134e4a 0,transparent 60%),var(--nv);color:#fff;padding:36px 16px 56px}
+.in{max-width:880px;margin:0 auto}
+.hero .in{display:grid;grid-template-columns:1fr 160px;gap:20px;align-items:center}
+.kick{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:#5eead4;font-weight:700}
+h1{font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.15;margin:6px 0 10px}
+.hero p{margin:0 0 16px;color:#c9d6e2;max-width:48ch}
+.cta{display:inline-block;background:#fbbf24;color:#1b1400;font-weight:700;padding:11px 20px;border-radius:12px;text-decoration:none}
+.radar{width:160px;height:160px;border-radius:50%;position:relative;background:repeating-radial-gradient(circle,transparent 0 24px,rgba(94,234,212,.35) 25px 26px);border:1px solid rgba(94,234,212,.5)}
+.radar:before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(45,212,191,.55),transparent 28%);animation:sw 4s linear infinite}
+.radar i{position:absolute;width:9px;height:9px;border-radius:50%;background:#fbbf24;box-shadow:0 0 10px #fbbf24;animation:bl 2.4s ease-in-out infinite}
+.radar i:nth-child(1){top:32px;left:98px}.radar i:nth-child(2){top:96px;left:44px;animation-delay:.8s}.radar i:nth-child(3){top:112px;left:110px;animation-delay:1.6s}
+@keyframes sw{to{transform:rotate(360deg)}}@keyframes bl{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.radar:before,.radar i{animation:none}html{scroll-behavior:auto}}
+@media (max-width:600px){.hero .in{grid-template-columns:1fr}.radar{display:none}}
+main{max-width:880px;margin:-32px auto 0;padding:0 16px 40px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:var(--sh)}
+h2{font-size:1.1rem;margin:0 0 4px}
+.mu{color:var(--mu);font-size:.9rem}
+label{font-weight:700}
+textarea{width:100%;min-height:140px;margin-top:8px;padding:12px;border:1.5px solid var(--bd);border-radius:12px;background:var(--pg);color:var(--tx);font:inherit;resize:vertical}
+textarea:focus{border-color:var(--ac)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0}
+.chip{border:1px solid var(--bd);background:var(--pg);color:var(--tx);border-radius:99px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.chip:hover{border-color:var(--ac)}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{padding:12px 20px;border:0;border-radius:12px;background:var(--ac);color:var(--bt);font:inherit;font-weight:700;cursor:pointer}
+.btn.g{background:var(--ac2);color:var(--ac)}
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0 6px}
+.meter span{height:10px;border-radius:6px;background:var(--bd)}
+.meter.Rendah span:nth-child(1){background:var(--lo)}
+.meter.Sedang span:nth-child(-n+2){background:var(--md)}
+.meter.Tinggi span{background:var(--hi)}
+.lvl{font-weight:800;font-size:1.25rem}.Tinggi .lvl,.lvl.Tinggi{color:var(--hi)}.lvl.Sedang{color:var(--md)}.lvl.Rendah{color:var(--lo)}
+.tag{display:inline-block;background:var(--ac2);color:var(--ac);padding:3px 11px;border-radius:99px;font-size:.85rem;font-weight:600;margin:3px 5px 3px 0}
+.warn{border:2px solid var(--hi);border-radius:12px;padding:12px 14px;color:var(--hi);font-weight:700;margin:12px 0}
+ol.st{list-style:none;padding:0;margin:8px 0;counter-reset:s}
+ol.st li{counter-increment:s;position:relative;padding:0 0 12px 38px}
+ol.st li:before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-size:.8rem;font-weight:700;display:grid;place-items:center}
+.box{background:var(--pg);border:1px dashed var(--bd);border-radius:12px;padding:12px;font-size:.93rem}
+.br{display:grid;grid-template-columns:minmax(120px,190px) 1fr 30px;gap:10px;align-items:center;margin:8px 0;font-size:.88rem}
+.bar{height:12px;background:linear-gradient(90deg,var(--ac),#2dd4bf);border-radius:8px;transition:width .5s}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:12px}
+.how div{background:var(--pg);border-radius:14px;padding:14px}
+.how b{display:block;margin-bottom:2px}
+footer{max-width:880px;margin:0 auto;padding:0 16px 40px;color:var(--mu);font-size:.85rem}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:12px}
+select,input[type=text],input[type=password]{width:100%;padding:11px;border:1.5px solid var(--bd);border-radius:12px;background:var(--pg);color:var(--tx);font:inherit}
+h3{font-size:.95rem;margin:16px 0 4px}
+.lab{font-size:.82rem;font-weight:700;color:var(--mu);display:block;margin-bottom:4px}
+.ph{background:var(--ac2);border-radius:12px;padding:10px 12px;margin:8px 0;font-size:.93rem}
+[hidden]{display:none}
+.sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+<div>
+<div class="kick" id="inst">Nama Instansi Anda</div>
+<h1>Radar Dini Hubungan Industrial</h1>
+<p>Hadir sebelum viral. Baca keluhan, kenali jenis masalah dan urgensinya, lalu arahkan ke jalur yang tepat.</p>
+<a class="cta" href="#scan">Mulai pindai</a>
+</div>
+<div class="radar" aria-hidden="true"><i></i><i></i><i></i></div>
+</div></header>
+
+<main>
+<section class="card" id="scan" aria-labelledby="t1">
+<h2 id="t1">Pindai keluhan</h2>
+<p class="mu">Teks diproses di perangkat Anda dan tidak dikirim ke mana pun. Hapus nama orang dan perusahaan sebelum menempel.</p>
+<label for="inp">Keluhan atau unggahan</label>
+<textarea id="inp" placeholder="Tempel teks di sini..."></textarea>
+<p class="mu" style="margin:8px 0 0"><b>Jangan menulis nama atau nomor telepon pengadu di sini.</b> Identitas dicatat di register resmi instansi; halaman ini hanya membuat kode kasus untuk menautkannya.</p>
+<div class="g3">
+<div><label class="lab" for="prov">Provinsi</label><select id="prov"></select></div>
+<div><label class="lab" for="kab">Kabupaten/Kota (opsional)</label><input type="text" id="kab" autocomplete="off"></div>
+<div><label class="lab" for="sek">Sektor usaha</label><select id="sek"></select></div>
+</div>
+<div class="chips" role="group" aria-label="Contoh kasus fiktif"><span class="mu">Coba contoh fiktif:</span>
+<button class="chip" data-e="Karyawan di-PHK sepihak minggu lalu tanpa pesangon. Kalau tidak ada kabar besok akan kami viralkan dan demo.">PHK + viral</button>
+<button class="chip" data-e="Gaji tiga bulan belum dibayar dan BPJS tidak didaftarkan oleh perusahaan.">Upah + BPJS</button>
+<button class="chip" data-e="Kontrak saya diperpanjang berkali-kali dan saya dipindah ke bagian lain tanpa surat.">Kontrak + mutasi</button>
+</div>
+<div class="row"><button class="btn" id="go">Analisis</button><button class="btn g" id="clr">Bersihkan</button></div>
+<p class="mu" id="msg" role="status" style="margin:10px 0 0"></p>
+</section>
+
+<section class="card" id="out" aria-live="polite" tabindex="-1" hidden></section>
+
+<section class="card" id="gate" aria-labelledby="t5">
+<h2 id="t5">Area admin</h2>
+<p class="mu" id="gm"></p>
+<label class="lab" for="pin">PIN</label>
+<input type="password" id="pin" autocomplete="off" style="max-width:260px">
+<div class="row"><button class="btn g" id="gb">Masuk</button></div>
+<p class="mu" id="ge" role="status" style="margin:10px 0 0"></p>
+<p class="mu" style="margin:6px 0 0">Lupa PIN: hapus data situs ini di peramban (data pemetaan di perangkat ini ikut terhapus).</p>
+</section>
+<div id="adm" hidden>
+<section class="card" aria-labelledby="t2">
+<h2 id="t2">Pemetaan data</h2>
+<p class="mu">Hanya metadata yang disimpan (wilayah, sektor, jenis, urgensi), tanpa isi teks dan tanpa identitas. Data tersimpan di peramban ini saja.</p>
+<div id="chart"></div>
+<div class="row"><button class="btn" id="exp">Unduh CSV</button><button class="btn g" id="rst">Kosongkan data</button></div>
+<p class="mu" style="margin:10px 0 0">Untuk menggabungkan data beberapa petugas, kumpulkan berkas CSV masing-masing lalu gabungkan di spreadsheet. Halaman ini belum punya penyimpanan terpusat.</p>
+</section>
+<section class="card" aria-labelledby="t4">
+<h2 id="t4">Kontak Dinas Ketenagakerjaan</h2>
+<p class="mu">Daftar kontak <b>belum terisi</b>. Isi dari sumber resmi dan verifikasi berkala. Satu baris satu wilayah, format: <code>Nama wilayah;telepon</code> (gunakan nama provinsi persis seperti di daftar, dan nama kabupaten/kota persis seperti yang diketik).</p>
+<textarea id="dirin" style="min-height:90px" placeholder="Jawa Barat;022-0000000&#10;Kota Bandung;022-1111111"></textarea>
+<div class="row"><button class="btn" id="dsv">Simpan kontak</button><button class="btn g" id="dtp">Unduh templat 38 provinsi</button></div>
+<p class="mu" id="dst" role="status" style="margin:10px 0 0"></p>
+</section>
+
+<section class="card" aria-labelledby="t3">
+<h2 id="t3">Cara kerja</h2>
+<div class="how">
+<div><b>1. Baca</b><span class="mu">Mencari kata kunci jenis masalah dan sinyal eskalasi.</span></div>
+<div><b>2. Nilai</b><span class="mu">Menghitung skor urgensi dari sinyal viral, aksi, dan keselamatan.</span></div>
+<div><b>3. Rujuk</b><span class="mu">Menyarankan bipartit, mediasi, atau pengawas.</span></div>
+<div><b>4. Balas</b><span class="mu">Menyusun draf balasan netral yang tidak menilai kasus.</span></div>
+</div>
+<p class="mu" style="margin-top:12px">Pembacaan memakai kata kunci, bukan kecerdasan buatan. Sindiran, singkatan, dan bahasa daerah bisa terlewat.</p>
+</section>
+<div class="row" style="margin-bottom:16px"><button class="btn g" id="lock">Kunci area admin</button></div>
+</div>
+</main>
+
+<footer>
+<p id="ft"></p>
+</footer>
+
+<script>
+var CONFIG={instansi:"Nama Instansi Anda",kanal:"",versi:"v0.1 (uji coba)",kontak:{/* isi sebelum diunggah, contoh: "Jawa Barat":"022-0000000" */}};
+var CAT={"PHK":["phk","dipecat","pecat","diberhentikan","dirumahkan","pemutusan","di-phk"],
+"Upah & Pesangon":["gaji","upah","pesangon","thr","lembur","tunggakan","belum dibayar","tidak dibayar","potong gaji","umk","umr"],
+"Kontrak (PKWT/Outsourcing)":["kontrak","pkwt","outsourcing","alih daya","magang","tidak diangkat"],
+"BPJS & Jaminan":["bpjs","jamsostek","jaminan pensiun","jht","tidak didaftarkan","iuran"],
+"K3 & Perlakuan":["kecelakaan","k3","intimidasi","dibentak","pelecehan","diskriminasi","kekerasan","bullying"],
+"Sanksi & Mutasi":["mutasi","skorsing","surat peringatan","sp1","sp2","sp3","demosi","dipindah"],
+"Serikat & Aksi":["serikat","spsi","demo","mogok","unjuk rasa","pkb","berunding"]};
+var VIRAL=["viral","viralkan","trending","fyp","rame","ramai","sebarkan","bongkar","boikot","open mic"];
+var ESC=["demo","mogok","ancam","lapor polisi","somasi","pengacara","sidang","sebarkan","bongkar","boikot","besok","hari ini","sekarang","mendesak"];
+var SAFE=["bunuh diri","mengakhiri hidup","ingin mati","bacok","kekerasan fisik","dipukul","ancam bunuh"];
+var NORMA=["gaji","upah","pesangon","thr","bpjs","jamsostek","phk sepihak","tanpa pesangon","tidak didaftarkan","lembur"];
+var $=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function has(t,a){return a.filter(function(w){return t.indexOf(w)>-1})}
+function analyze(raw){
+ var t=" "+raw.toLowerCase()+" ",cats=Object.keys(CAT).filter(function(k){return has(t,CAT[k]).length});
+ var v=has(t,VIRAL),e=has(t,ESC),s=has(t,SAFE),n=has(t,NORMA);
+ var sc=v.length*2+e.length+(cats.length>2?1:0)+(s.length?4:0)+(n.length?2:0);
+ return{cats:cats,v:v.length>0,s:s.length>0,n:n.length>0,sc:sc,lvl:sc>=4?"Tinggi":sc>=2?"Sedang":"Rendah"};
+}
+function steps(r){
+ var o=[];
+ if(r.s)o.push("<b>Prioritaskan keselamatan.</b> Hubungi pelapor secara langsung dan libatkan layanan darurat atau pendamping setempat sebelum urusan hubungan kerja.");
+ if(r.n)o.push("Ada dugaan pelanggaran norma (upah, BPJS, PHK). Teruskan ke <b>pengawas ketenagakerjaan</b>, jangan hanya edukasi.");
+ o.push("Pastikan <b>perundingan bipartit</b> sudah ditempuh. Bila gagal, arahkan ke pencatatan dan mediasi.");
+ if(r.v)o.push("Ada sinyal rencana viral. Kirim pesan netral dalam 24 jam dan tawarkan kanal resmi.");
+ if(r.cats.indexOf("Serikat & Aksi")>-1)o.push("Libatkan perwakilan serikat pekerja dan pengusaha agar tidak dinilai sepihak.");
+ if(!r.cats.length)o.push("Jenis masalah belum terbaca. Minta keterangan tambahan dari pelapor.");
+ return o;
+}
+function reply(){return "Terima kasih sudah menyampaikan. Kami tidak menilai kasus ini di kolom komentar, namun siap memfasilitasi penyelesaiannya secara netral bagi kedua belah pihak. "+(CONFIG.kanal?"Silakan hubungi "+CONFIG.kanal+".":"Silakan hubungi kanal resmi kami agar segera dibantu.")}
+var PROV=["Aceh","Sumatera Utara","Sumatera Barat","Riau","Jambi","Sumatera Selatan","Bengkulu","Lampung","Kepulauan Bangka Belitung","Kepulauan Riau","DKI Jakarta","Jawa Barat","Jawa Tengah","DI Yogyakarta","Jawa Timur","Banten","Bali","Nusa Tenggara Barat","Nusa Tenggara Timur","Kalimantan Barat","Kalimantan Tengah","Kalimantan Selatan","Kalimantan Timur","Kalimantan Utara","Sulawesi Utara","Sulawesi Tengah","Sulawesi Selatan","Sulawesi Tenggara","Gorontalo","Sulawesi Barat","Maluku","Maluku Utara","Papua","Papua Barat","Papua Barat Daya","Papua Selatan","Papua Tengah","Papua Pegunungan"];
+var SEKTOR=["Manufaktur","Perdagangan/Ritel","Jasa","Konstruksi","Perkebunan/Pertambangan","Transportasi/Platform digital","Lainnya"];
+function ld(k,d){try{return JSON.parse(localStorage.getItem(k)||d)}catch(x){return JSON.parse(d)}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(x){}}
+var DATA=ld("radarData","[]"),DIR=ld("radarDir","{}");Object.keys(CONFIG.kontak||{}).forEach(function(k){if(!DIR[norm(k)])DIR[norm(k)]=CONFIG.kontak[k]});
+function opts(id,arr,ph){$(id).innerHTML='<option value="">'+ph+'</option>'+arr.map(function(a){return'<option>'+esc(a)+'</option>'}).join("")}
+opts("prov",PROV,"Pilih provinsi");opts("sek",SEKTOR,"Pilih sektor");
+function norm(s){return String(s||"").trim().toLowerCase().replace(/\s+/g," ")}
+function phoneFor(pv,kb){var k=norm(kb),p=norm(pv);if(k&&DIR[k])return{n:kb,t:DIR[k]};if(p&&DIR[p])return{n:"Dinas Ketenagakerjaan "+pv,t:DIR[p]};return null}
+function mkKode(){var d=new Date();return"RD-"+String(d.getFullYear()).slice(2)+("0"+(d.getMonth()+1)).slice(-2)+("0"+d.getDate()).slice(-2)+"-"+Math.random().toString(36).slice(2,5).toUpperCase()}
+function bars(t,c){var ks=Object.keys(c).sort(function(a,b){return c[b]-c[a]}).slice(0,10);if(!ks.length)return"";var mx=c[ks[0]];return'<h3>'+t+'</h3>'+ks.map(function(k){return'<div class="br"><span>'+esc(k)+'</span><div><div class="bar" style="width:'+(c[k]/mx*100)+'%"></div></div><b>'+c[k]+'</b></div>'}).join("")}
+function chart(){
+ var a={},b={},c={};
+ DATA.forEach(function(d){d.jenis.forEach(function(j){a[j]=(a[j]||0)+1});var p=d.prov||"Tidak diisi",s=d.sek||"Tidak diisi";b[p]=(b[p]||0)+1;c[s]=(c[s]||0)+1});
+ $("chart").innerHTML=DATA.length?'<p class="mu"><b>'+DATA.length+'</b> kasus tersimpan.'+(DATA.length<5?' <b>Data masih sedikit; jangan menyimpulkan pola.</b>':'')+'</p>'+bars("Jenis masalah",a)+bars("Provinsi",b)+bars("Sektor",c):'<p class="mu">Belum ada data tersimpan.</p>';
+}
+function q(v){v=String(v==null?"":v);if(/^[=+\-@\t\r]/.test(v))v="'"+v;return'"'+v.replace(/"/g,'""')+'"'}
+function dl(n,t){var a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["\ufeff"+t],{type:"text/csv;charset=utf-8"}));a.download=n;document.body.appendChild(a);a.click();document.body.removeChild(a)}
+function dirCount(){$("dst").textContent=Object.keys(DIR).length+" kontak tersimpan di peramban ini."}
+function copy(t,b){var d=function(){var o=b.textContent;b.textContent="Tersalin";setTimeout(function(){b.textContent=o},1600)};
+ function fb(){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");d()}catch(x){}document.body.removeChild(a)}
+ try{navigator.clipboard.writeText(t).then(d,fb)}catch(x){fb()}}
+$("go").onclick=function(){
+ var v=$("inp").value.trim();
+ if(!v){$("msg").textContent="Tempel teks keluhan terlebih dulu.";$("inp").focus();return}
+ $("msg").textContent="";
+ var r=analyze(v),o=$("out");
+ var h='<h2>Hasil pemindaian</h2><div class="lvl '+r.lvl+'">Urgensi: '+r.lvl+'</div><div class="meter '+r.lvl+'" aria-hidden="true"><span></span><span></span><span></span></div>';
+ if(r.s)h+='<div class="warn" role="alert">Sinyal keselamatan terdeteksi. Utamakan kontak langsung dengan pelapor.</div>';
+ h+='<p style="margin:14px 0 4px"><b>Jenis masalah terbaca</b></p>'+(r.cats.length?r.cats.map(function(c){return'<span class="tag">'+esc(c)+'</span>'}).join(""):'<span class="mu">Belum terbaca</span>');
+ h+='<p style="margin:14px 0 4px"><b>Langkah yang disarankan</b></p><ol class="st">'+steps(r).map(function(x){return'<li>'+x+'</li>'}).join("")+'</ol>';
+ h+='<p style="margin:6px 0 4px"><b>Draf balasan netral</b></p><div class="box" id="dr">'+esc(reply())+'</div><div class="row"><button class="btn g" id="cd">Salin balasan</button></div>';
+ var pv=$("prov").value,kb=$("kab").value.trim(),ph=phoneFor(pv,kb);
+ h+='<p style="margin:6px 0 4px"><b>Kontak rujukan</b></p><div class="ph">'+(ph?esc(ph.n)+': <b>'+esc(ph.t)+'</b>':(pv?'Nomor Dinas Ketenagakerjaan untuk wilayah ini belum diisi (lihat bagian Kontak).':'Pilih provinsi untuk menampilkan kontak rujukan.'))+'</div>';
+ var kd=mkKode();
+ h+='<p style="margin:10px 0 4px"><b>Kode kasus:</b> <code id="kd">'+kd+'</code></p><div class="row"><button class="btn g" id="sv">Simpan ke pemetaan data</button></div><p class="mu" id="svm" role="status"></p>';
+ h+='<p class="mu" style="margin-top:12px">Saran awal, bukan penilaian hukum. Skor '+r.sc+'.</p>';
+ o.innerHTML=h;o.hidden=false;o.focus({preventScroll:true});o.scrollIntoView({behavior:"smooth",block:"start"});
+ $("cd").onclick=function(){copy($("dr").textContent,this)};
+ $("sv").onclick=function(){
+  DATA.push({k:kd,w:new Date().toISOString().slice(0,10),prov:pv,kab:kb,sek:$("sek").value,jenis:r.cats.length?r.cats:["Belum terbaca"],u:r.lvl,v:r.v,n:r.n});
+  sv("radarData",DATA);chart();this.disabled=true;$("svm").textContent="Tersimpan di perangkat ini. Ringkasan hanya dapat dilihat admin."};
+};
+$("clr").onclick=function(){$("inp").value="";$("out").hidden=true;$("msg").textContent="";$("inp").focus()};
+$("rst").onclick=function(){if(DATA.length&&!confirm("Hapus semua data pemetaan di peramban ini?"))return;DATA=[];sv("radarData",DATA);chart()};
+$("exp").onclick=function(){if(!DATA.length){return}var h="kode_kasus,tanggal,provinsi,kabupaten_kota,sektor,jenis_masalah,urgensi,sinyal_viral,dugaan_pelanggaran_norma\n";dl("radar-dini-data.csv",h+DATA.map(function(d){return[d.k,d.w,d.prov,d.kab,d.sek,d.jenis.join(" | "),d.u,d.v?"ya":"tidak",d.n?"ya":"tidak"].map(q).join(",")}).join("\n"))};
+$("dsv").onclick=function(){var n=0;$("dirin").value.split(/\n/).forEach(function(l){var i=l.indexOf(";");if(i<1)return;var k=norm(l.slice(0,i)),t=l.slice(i+1).trim();if(k&&t&&k!=="wilayah"){DIR[k]=t;n++}});sv("radarDir",DIR);$("dirin").value="";dirCount();$("dst").textContent+=" "+n+" baris diproses."};
+$("dtp").onclick=function(){dl("templat-kontak-disnaker.csv","wilayah;telepon\n"+PROV.map(function(p){return p+";"}).join("\n"))};
+dirCount();
+
+var PIN=ld("radarPin",'""');
+function hx(s){return crypto.subtle.digest("SHA-256",new TextEncoder().encode("radar:"+s)).then(function(b){return Array.from(new Uint8Array(b)).map(function(v){return("0"+v.toString(16)).slice(-2)}).join("")})}
+function gateUI(){$("gm").textContent=PIN?"Masukkan PIN admin untuk membuka pemetaan data, kontak dinas, dan cara kerja.":"Belum ada PIN di perangkat ini. Buat PIN admin (minimal 6 karakter).";$("gb").textContent=PIN?"Masuk":"Simpan PIN dan masuk"}
+function openAdm(on){$("adm").hidden=!on;$("gate").hidden=on;$("pin").value="";$("ge").textContent="";if(on)chart()}
+$("gb").onclick=async function(){
+ if(!(window.crypto&&crypto.subtle)){$("ge").textContent="Peramban ini tidak mendukung pengamanan PIN. Buka lewat alamat https.";return}
+ var v=$("pin").value;
+ if(v.length<6){$("ge").textContent="PIN minimal 6 karakter.";return}
+ var h=await hx(v);
+ if(!PIN){PIN=h;sv("radarPin",PIN);gateUI();openAdm(true);return}
+ if(h!==PIN){await new Promise(function(r){setTimeout(r,1000)});$("ge").textContent="PIN salah.";$("pin").select();return}
+ openAdm(true)};
+$("pin").onkeydown=function(e){if(e.key==="Enter")$("gb").click()};
+$("lock").onclick=function(){openAdm(false);gateUI()};
+gateUI();
+[].forEach.call(document.querySelectorAll(".chip"),function(b){b.onclick=function(){$("inp").value=b.getAttribute("data-e");$("inp").focus()}});
+$("inst").textContent=CONFIG.instansi;
+$("ft").textContent=CONFIG.instansi+" · "+CONFIG.versi;
+chart();
+</script>
+</body>
+</html>
